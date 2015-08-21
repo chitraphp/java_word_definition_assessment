@@ -28,7 +28,7 @@ public class Word {
     mDefinitions.add(definition);
   }
 
-  public static ArrayList<Word> all() {
+  public static ArrayList<Word> getAll() {
     return wordList;
   }
 
