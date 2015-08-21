@@ -1,0 +1,9 @@
+<h1>Words List </h1>
+<ul>
+#foreach ($word in $words)
+
+<li><a href="/words/$word.getId()/definition/new">$word.getWord()</a></li>
+
+#end
+</ul>
+<a href="/word/new">Add a New catergory</a>
