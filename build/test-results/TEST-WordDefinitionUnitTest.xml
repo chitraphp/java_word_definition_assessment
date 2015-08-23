@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordDefinitionUnitTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-08-23T03:52:14" hostname="chitraphp" time="0.006">
+<testsuite name="WordDefinitionUnitTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-08-23T04:06:27" hostname="chitraphp" time="0.008">
   <properties/>
   <testcase name="definition_getAll" classname="WordDefinitionUnitTest" time="0.002"/>
   <testcase name="definition_instantiatesCorrectly_true" classname="WordDefinitionUnitTest" time="0.0"/>
@@ -8,14 +8,14 @@
   <testcase name="definition_getAll_equals" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="clear_emptiesAllWordsFromArrayList" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="word_addDefinitions" classname="WordDefinitionUnitTest" time="0.0"/>
-  <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="WordDefinitionUnitTest" time="0.001"/>
+  <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="word_getAll" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="clear_emptiesAllDefinitionsFromArrayList" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="find_returnsNullWhenNoWordFound_null" classname="WordDefinitionUnitTest" time="0.0"/>
-  <testcase name="word_getWord" classname="WordDefinitionUnitTest" time="0.001"/>
+  <testcase name="word_getWord" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="word_instantiatesCorrectly_true" classname="WordDefinitionUnitTest" time="0.0"/>
   <testcase name="word_getId" classname="WordDefinitionUnitTest" time="0.0"/>
-  <testcase name="definition_getDefinition" classname="WordDefinitionUnitTest" time="0.0"/>
+  <testcase name="definition_getDefinition" classname="WordDefinitionUnitTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

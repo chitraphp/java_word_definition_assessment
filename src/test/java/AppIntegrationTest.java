@@ -60,4 +60,35 @@ public class AppIntegrationTest extends FluentTest {
     assertThat(pageSource()).contains("moon");
     assertThat(pageSource()).contains("blue");
   }
+
+  // @Test
+  // public void testDefinitionLink() {
+  //   goTo("http://localhost:4567/");
+  //   find("a", withText("Add a New Word")).click();
+  //   fill("#word").with("moon");
+  //   submit(".btn");
+  //   fill("#word").with("blue");
+  //   submit(".btn");
+  //   find("a", withText("Word List")).click();
+  //   find("a", withText("blue")).click();
+  //   assertThat(pageSource()).contains("Add new Definition");
+  //
+  // }
+
+  // @Test
+  // public void testDefinitionForm() {
+  //   goTo("http://localhost:4567/");
+  //   find("a", withText("Add a New Word")).click();
+  //   fill("#word").with("moon");
+  //   submit(".btn");
+  //   fill("#word").with("blue");
+  //   submit(".btn");
+  //   find("a", withText("Word List")).click();
+  //   find("a", withText("blue")).click();
+  //   find("a", withText("Add new Definition")).click();
+  //   assertThat(pageSource()).contains("blue");
+  //
+  // }
+  //
+
 }

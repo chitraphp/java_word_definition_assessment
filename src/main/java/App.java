@@ -25,7 +25,7 @@ public class App {
     get("words/:id/definitions", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       Word word = Word.find(Integer.parseInt(request.params(":id")));
-      System.out.println(word.getWord());
+      
       ArrayList<Definition> definitions = word.getDefinitions();
       model.put("word", word);
       model.put("words",Word.getAll());
@@ -37,7 +37,7 @@ public class App {
     get("words/:id/definition/new", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       Word word = Word.find(Integer.parseInt(request.params(":id")));
-      System.out.println(word.getWord());
+      //System.out.println(word.getWord());
       ArrayList<Definition> definitions = word.getDefinitions();
       model.put("word", word);
       model.put("definitions", definitions);
