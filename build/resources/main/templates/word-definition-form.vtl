@@ -1,0 +1,17 @@
+<h1>$word.getWord()</h1>
+<ul>
+#foreach($definition in $definitions)
+<li>$definition.getDefinition()</li>
+#end
+</ul>
+
+<h1>Add New Definition for this word</h1>
+<form action="/definition" method="post">
+  <label for="definition">Definition</label>
+  <input id="definition" name="definition" type="text">
+  <input type="hidden" name="wordId" value="$word.getId()">
+  <button type="submit" class="btn btn-success">Add</button>
+</form>
+
+<a href="/">Word List</a>
+<a href="/word/new">Add a New word</a><br>

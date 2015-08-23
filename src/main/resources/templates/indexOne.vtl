@@ -1,0 +1,40 @@
+<h1>Word Definitions!</h1>
+<div class="row">
+  <div name="words" id="words" class="col-md-6" float="left">
+    <table class="table">
+      <thead><th>Words List</th></thead>
+      <tbody>
+        #foreach ($word in $words)
+        <tr class="success">
+          <td>
+            <a href="/words/$word.getId()/definitions">$word.getWord()</a>
+          </td>
+        </tr>
+        #end
+      </tbody>
+
+    </table>
+  </div>
+  <div name="definitions" id="definitions" class="col-md-6" float="right">
+    #if($definitions)
+    <table class="table">
+      <thead><th>Definitions for </th></thead>
+      <tbody>
+        #foreach ($definition in $definitions)
+        <tr class="success">
+          <td>
+            $definition.getDefinition()
+          </td>
+        </tr>
+        #end
+      </tbody>
+
+    </table>
+    #end
+    <h1>$word.getWord()</h1>
+    <a href="/words/$word.getId()/definition/new">Add new Definition</a>
+  </div>
+</div>
+
+
+<br><div name="word-link" id="word-link"><a href="/word/new">Add a New Word</a></br>

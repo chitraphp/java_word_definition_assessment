@@ -1,21 +1,21 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="WordUnitTest" tests="15" failures="0" errors="0" timestamp="2015-08-21T22:36:49" hostname="chitraphp" time="0.008">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WordUnitTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2015-08-22T20:59:30" hostname="chitraphp" time="0.022">
   <properties/>
-  <testcase name="definition_getAll" classname="WordUnitTest" time="0.002"/>
-  <testcase name="definition_instantiatesCorrectly_true" classname="WordUnitTest" time="0.0"/>
-  <testcase name="definition_getId" classname="WordUnitTest" time="0.0"/>
-  <testcase name="word_getAll_equals" classname="WordUnitTest" time="0.0"/>
-  <testcase name="definition_getAll_equals" classname="WordUnitTest" time="0.0"/>
+  <testcase name="definition_getAll" classname="WordUnitTest" time="0.004"/>
+  <testcase name="definition_instantiatesCorrectly_true" classname="WordUnitTest" time="0.001"/>
+  <testcase name="definition_getId" classname="WordUnitTest" time="0.001"/>
+  <testcase name="word_getAll_equals" classname="WordUnitTest" time="0.001"/>
+  <testcase name="definition_getAll_equals" classname="WordUnitTest" time="0.001"/>
   <testcase name="clear_emptiesAllWordsFromArrayList" classname="WordUnitTest" time="0.001"/>
   <testcase name="word_addDefinitions" classname="WordUnitTest" time="0.0"/>
   <testcase name="find_returnsNullWhenNoDefinitionFound_null" classname="WordUnitTest" time="0.0"/>
   <testcase name="word_getAll" classname="WordUnitTest" time="0.0"/>
-  <testcase name="clear_emptiesAllDefinitionsFromArrayList" classname="WordUnitTest" time="0.0"/>
+  <testcase name="clear_emptiesAllDefinitionsFromArrayList" classname="WordUnitTest" time="0.001"/>
   <testcase name="find_returnsNullWhenNoWordFound_null" classname="WordUnitTest" time="0.0"/>
   <testcase name="word_getWord" classname="WordUnitTest" time="0.0"/>
   <testcase name="word_instantiatesCorrectly_true" classname="WordUnitTest" time="0.0"/>
   <testcase name="word_getId" classname="WordUnitTest" time="0.0"/>
-  <testcase name="definition_getDefinition" classname="WordUnitTest" time="0.0"/>
+  <testcase name="definition_getDefinition" classname="WordUnitTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
