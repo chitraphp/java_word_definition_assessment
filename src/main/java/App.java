@@ -11,7 +11,8 @@ public class App {
 
     get("/", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-      model.put("template", "templates/index.vtl");
+      model.put("template", "templates/indexOne.vtl");
+      model.put("words", Word.getAll());
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -21,19 +22,15 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    post("/word", (request,response) -> {
+    get("words/:id/definitions", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
-      String word = request.queryParams("word");
-      Word newWord = new Word(word);
-      model.put("newWord", newWord);
-      model.put("template", "templates/success.vtl");
-      return new ModelAndView(model, layout);
-    }, new VelocityTemplateEngine());
-
-    get("/words", (request, response) -> {
-      HashMap<String, Object> model = new HashMap<String, Object>();
-      model.put("words", Word.getAll());
-      model.put("template", "templates/word.vtl");
+      Word word = Word.find(Integer.parseInt(request.params(":id")));
+      System.out.println(word.getWord());
+      ArrayList<Definition> definitions = word.getDefinitions();
+      model.put("word", word);
+      model.put("words",Word.getAll());
+      model.put("definitions", definitions);
+      model.put("template", "templates/indexOne.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -45,6 +42,15 @@ public class App {
       model.put("word", word);
       model.put("definitions", definitions);
       model.put("template", "templates/word-definition-form.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    post("/word", (request,response) -> {
+      HashMap<String, Object> model = new HashMap<String, Object>();
+      String word = request.queryParams("word");
+      Word newWord = new Word(word);
+      model.put("words", Word.getAll());
+      model.put("template", "templates/word-form.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -68,8 +74,6 @@ public class App {
       model.put("template", "templates/word-definition-form.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
-
 
 
 

@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
-public class WordUnitTest {
+public class WordDefinitionUnitTest {
   @Rule
   public ClearRule  clearRule= new ClearRule();
 
@@ -102,8 +102,4 @@ public class WordUnitTest {
     Definition.clear();
     assertEquals(Definition.getAll().size(), 0);
     }
-
-
-
-
 }

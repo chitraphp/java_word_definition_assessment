@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "java_word_assessment"
 version = '1.0'
-mainClassName = "AppNew"
+mainClassName = "App"
 
 repositories {
  mavenCentral()
